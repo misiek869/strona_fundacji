@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import bgcImg from '../../images/flamingo_big.jpg'
-import flamingoImg from '../../images/flamingo.png'
+
 
 export const HeroStyled = styled.section`
 	/* background-image: url(${bgcImg}); */
@@ -44,13 +44,20 @@ export const HeroTextSection = styled(StyledColumn)`
 	}
 `
 
-export const HeroImage = styled(StyledColumn)`
-	background-image: url(${flamingoImg});
-	background-repeat: no-repeat;
-	background-position: bottom center;
-	background-size: 70%;
+export const HeroImage = styled.img`
+	height: 10%;
 
 	@media ${props => props.theme.media.mobile} {
 		display: none;
 	}
 `
+// export const HeroImage = styled(StyledColumn)`
+// 	background-image: url(${flamingoImg});
+// 	background-repeat: no-repeat;
+// 	background-position: bottom center;
+// 	background-size: 70%;
+
+// 	@media ${props => props.theme.media.mobile} {
+// 		display: none;
+// 	}
+// `

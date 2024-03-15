@@ -1,11 +1,12 @@
 import React from 'react'
 import { HeroStyled, HeroTextSection, HeroImage } from './Hero.styled'
+import flamingoImg from '../../images/flamingo.png'
 
 const Hero = () => {
 	return (
 		<>
 			<HeroStyled>
-				<HeroImage></HeroImage>
+				<HeroImage src={flamingoImg} alt="flamingo"></HeroImage>
 				<HeroTextSection>
 					<h1>Fundacja Miasto Pracownia</h1>
 					<p>
